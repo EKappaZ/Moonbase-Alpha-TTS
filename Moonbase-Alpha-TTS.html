@@ -1,0 +1,11 @@
+<form action="" method="">
+  <a href="http://tts.cyzon.us/tts?text=""" id=link>link text</a>
+  <textarea rows=3 columns=8 name=val id=val></textarea>
+  <button type=button onclick="useValue()">Use it</button>
+</form>
+<script>
+function useValue() {
+  document.getElementById('link').href +=
+   encodeURIComponent(document.getElementById('val').value);
+}
+</script>
